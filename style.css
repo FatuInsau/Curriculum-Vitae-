@@ -1,0 +1,17 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+    color: #0E3569;
+}
+
+body {
+    margin: 2rem;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #202021;
+}
+
+.principal {
+    background-color: #EFEFEF;
+}
