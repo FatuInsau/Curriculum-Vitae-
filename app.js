@@ -10,7 +10,7 @@ fetch('https://randomuser.me/api/')
         var info = data.results[0];
 
         divPrincipal.innerHTML += `<div class="row align-items-start container">
-        <div class="col-4">
+        <div class="col-md-4 col-lg-6">
             <div class="principal">
                 <img src="${info.picture.large}" alt="foto de la persona" class="rounded-circle img-fluid">
                 <h3>Acerca de mí</h2>
@@ -18,7 +18,7 @@ fetch('https://randomuser.me/api/')
             
                 <h3>Datos de contacto</h2>
                 <p><b>Celular:</b> ${info.cell}</p>
-                <p><b>Correo:</b> ${info.email}</p>
+                <p class="d-none d-lg-block"><b>Correo:</b> ${info.email}</p>
                 <p><b>Dirección:</b> ${info.location.street.name} ${info.location.street.number}, ${info.location.city}, ${info.location.state}, ${info.location.country}</p>
                 <br/>
             </div>
