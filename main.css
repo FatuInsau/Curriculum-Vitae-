@@ -1,6 +1,9 @@
 * {
     font-family: 'League Spartan', sans-serif;
     color: #0E3569;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    width: 100%;
 }
 
 body {
@@ -15,3 +18,9 @@ p , li {
 .principal {
     background-color: #EFEFEF;
 }
+
+img {
+    width: 20rem;
+    padding: 1rem;
+}
+
