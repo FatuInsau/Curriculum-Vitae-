@@ -17,7 +17,7 @@ fetch('https://randomuser.me/api/')
                     <img src="${info.picture.large}" alt="foto de la persona" class="rounded-circle img-fluid">
                     <div class="d-block d-md-none">
                         <h1 class="display-2">${info.name.title + ' ' + info.name.first + ' ' + info.name.last}</h3>
-                        <h2 class="display-4 color-black" id="laboral">Lic. en Administración</h4>
+                        <h2 class="display-4 color-black">Lic. en Administración</h4>
                         <hr/>
                     </div>
                     <h3>Acerca de mí</h2>
@@ -42,8 +42,8 @@ fetch('https://randomuser.me/api/')
             <div class="col-md-8 col-lg-6">
                 <div class="d-none d-md-block">
                     <h1 class="display-2">${info.name.title + ' ' + info.name.first + ' ' + info.name.last}</h3>
-                    <h2 class="display-4 color-black" id="laboral">Lic. en Administración</h4>
-                    <hr/>
+                    <h2 class="display-4 color-black" >Lic. en Administración</h4>
+                    <hr id="laboral"/>
                 </div>
                 <div>
                     <h3>Experiencia Laboral</h2>
