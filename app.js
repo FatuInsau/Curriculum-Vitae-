@@ -1,5 +1,6 @@
 // Lo que necesito del DOM
-var divPrincipal = document.querySelector('div');
+
+var divPrincipal = document.querySelector('#unico');
 
 
 // Datos de una persona random
@@ -14,13 +15,13 @@ fetch('https://randomuser.me/api/')
             <div class="principal">
                 <img src="${info.picture.large}" alt="foto de la persona" class="rounded-circle img-fluid">
                 <h3>Acerca de mí</h2>
-                <p>Soy una persona trabajadora, con iniciativa y buena predisposición para ayudar.</p>
+                <p id="contactos">Soy una persona trabajadora, con iniciativa y buena predisposición para ayudar.</p>
             
                 <h3>Datos de contacto</h2>
                 <p><b>Celular:</b> ${info.cell}</p>
                 <p class="d-none d-lg-block"><b>Correo:</b> ${info.email}</p>
                 <p><b>Dirección:</b> ${info.location.street.name} ${info.location.street.number}, ${info.location.city}, ${info.location.state}, ${info.location.country}</p>
-                <br/>
+                <br id="educados"/>
             </div>
             <div>
             <br/>
@@ -33,11 +34,11 @@ fetch('https://randomuser.me/api/')
                 <p> Lic. en Administración, 2018 </p>
             </div>
         </div>
-        <div class="col">
+        <div class="col-md-8 col-lg-6">
             <div>
-                <h1 class="display-2">${info.name.title + info.name.first + info.name.last}</h3>
-                <h2 class="display-4 color-black">Lic. en Administración</h4>
-                <hr>
+                <h1 class="display-2">${info.name.title + ' ' + info.name.first + ' ' + info.name.last}</h3>
+                <h2 class="display-4 color-black" id="laboral">Lic. en Administración</h4>
+                <hr/>
             </div>
             <div>
                 <h3>Experiencia Laboral</h2>
